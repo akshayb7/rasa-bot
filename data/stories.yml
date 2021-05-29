@@ -35,3 +35,18 @@ stories:
   - action: utter_greet
   - intent: tell_name
   - action: utter_name
+
+- story: happy path 2
+  steps:
+  - action: utter_greet
+  - intent: tell_name
+  - action: utter_name
+  - action: utter_my_name
+  - intent: get_name
+    entities:
+    - name: "Akshay"
+  - action: utter_mobile_number
+  - intent: mobile_number
+    entities:
+    - number: "8705462554"
+  - action: utter_thanks

@@ -100,3 +100,27 @@ nlu:
     - what should I call you
     - you name is what
     - what others call you 
+
+- intent: get_name
+  examples: |
+    - my name is [akshay]{"entity":"name", "value":"akshay"}
+    - my name is [tuby]{"entity":"name", "value":"tuby"}
+    - my name is [steven]{"entity":"name", "value":"steven"}
+    - [akshay]{"entity":"name", "value":"akshay"} this side
+    - people call me [akshay]{"entity":"name", "value":"akshay"}
+    - [akshay]{"entity":"name", "value":"akshay"} is my name
+    - I'm [akshay]{"entity":"name", "value":"akshay"}
+    - [akshay bhardwaj]{"entity":"name", "value":"akshay bhardwaj"}
+    - I am [cristiano ronaldo]{"entity":"name", "value":"cristiano ronaldo"}
+
+
+- intent: mobile_number
+  examples: |
+    - my number is [9935663564]{"entity":"number"}
+    - my phone number is [9935663564]{"entity":"number"}
+    - I can be reached at [9935663564]{"entity":"number"}
+    - you can reach me at [9935663564]{"entity":"number"}
+    - my number is [8042883472]{"entity":"number"}
+    - [9935663564]{"entity":"number"}
+    - I can be contacted at [9935663564]{"entity":"number"}
+    
