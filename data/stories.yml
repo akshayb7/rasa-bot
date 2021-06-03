@@ -50,3 +50,23 @@ stories:
     entities:
     - number: "8705462554"
   - action: utter_thanks
+
+- story: investment
+  steps:
+  - intent: financial_help
+  - action: utter_ask_crypto
+  - intent: deny
+  - action: utter_sorry
+
+- story: investment 2
+  steps:
+  - intent: financial_help
+  - action: utter_ask_crypto
+  - intent: affirm
+  - action: utter_quantity_crypto
+  - intent: crypto_yes
+    entities:
+    - crypto_investment: "15 SOL"
+  - slot_was_set:
+    - crypto: "15 SOL"
+  - action: utter_thanks

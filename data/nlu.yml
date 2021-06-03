@@ -123,4 +123,50 @@ nlu:
     - my number is [8042883472]{"entity":"number"}
     - [9935663564]{"entity":"number"}
     - I can be contacted at [9935663564]{"entity":"number"}
-    
+
+- intent: crypto
+  examples: |
+    - yes I have invested in crypto
+    - I do have invested in crypto
+    - I own some crypto
+    - I own some cryptocurrencies
+    - I have some money in cryptocurrency
+    - I got me some crypto
+    - Crypto is my drug
+    - Heavily involved in crypto
+    - I do own some cryptocurrencies
+
+- intent: stocks
+  examples: |
+    - I have some stocks
+    - I have made investments in stocks
+    - Yes I got some shares
+    - I love the share market
+    - Stocks, bonds, gold I have them all
+    - Who doesn't own stocks
+    - Own me some shares
+    - Shares are a must
+    - I have some stocks
+    - ofcourse I have stocks
+
+- intent: crypto_yes
+  examples: |
+    - I own [50 BTC]{"entity":"crypto_investment"}
+    - [30 ETH]{"entity":"crypto_investment"}
+    - I have [20 BNB]{"entity":"crypto_investment"}
+    - [50 BTC]{"entity":"crypto_investment"}
+    - About [111 SOL]{"entity":"crypto_investment"}
+    - Maybe around [1 SOL]{"entity":"crypto_investment"}
+    - Around [15 ETH]{"entity":"crypto_investment"}
+    - I own [50 Bitcoin]{"entity":"crypto_investment"}
+    - Maybe [0.15 Etherium]{"entity":"crypto_investment"}
+
+- intent: financial_help
+  examples: |
+    - keep track of fincance?
+    - financial help needed
+    - need to track portfolio
+    - need help with portfolio
+    - do you give financial advice
+    - can you help with finance
+    - I need to keep a tab on my finances

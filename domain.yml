@@ -15,10 +15,28 @@ intents:
   - mobile_number:
       use_entities:
         - number
+  - crypto
+  - stocks
+  - crypto_yes:
+      use_entities:
+        - crypto_investment
+  - financial_help
+  # - stocks_yes
+  #     use_entities:
+  #       - stocks_investment
 
 entities:
   - name
   - number
+  - crypto_investment
+  # - stocks_investment
+
+slots:
+  crypto:
+    type: text
+  
+  # stocks:
+  #   type: list
 
 responses:
   utter_greet:
@@ -51,6 +69,16 @@ responses:
 
   utter_thanks:
   - text: "Thank you."
+
+  utter_ask_crypto:
+  - text: "Do you own any cryptocurrencies?"
+
+  utter_quantity_crypto:
+  - text: "Which crypto do you own? And how much?"
+
+  utter_sorry:
+  - text: "Sorry, can't help you"
+
 
 session_config:
   session_expiration_time: 60
