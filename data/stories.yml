@@ -68,5 +68,31 @@ stories:
     entities:
     - crypto_investment: "15 SOL"
   - slot_was_set:
-    - crypto: "15 SOL"
+    - crypto_investment: "15 SOL"
+  - action: utter_thanks
+
+- story: investment 3
+  steps:
+  - intent: financial_help
+  - action: utter_ask_crypto
+  - intent: affirm
+  - action: utter_quantity_crypto
+  - intent: crypto_yes
+    entities:
+    - crypto_investment: "0.0001 BTC"
+  - slot_was_set:
+    - crypto_investment: "0.0001 BTC"
+  - action: utter_thanks
+
+- story: investment 4
+  steps:
+  - intent: financial_help
+  - action: utter_ask_crypto
+  - intent: affirm
+  - action: utter_quantity_crypto
+  - intent: crypto_yes
+    entities:
+    - crypto_investment: "BTC"
+  - slot_was_set:
+    - crypto_investment: "BTC"
   - action: utter_thanks

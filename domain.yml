@@ -32,8 +32,9 @@ entities:
   # - stocks_investment
 
 slots:
-  crypto:
+  crypto_investment:
     type: text
+    influence_conversation: true
   
   # stocks:
   #   type: list
